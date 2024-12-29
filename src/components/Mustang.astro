@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets'
+import Mustang01 from '../assets/mustang01.jpg'
+import Mustang02 from '../assets/mustang02.jpg'
+import Mustang03 from '../assets/mustang03.png'
+import ButtonMustang from './ButtonMustang.astro'
+---
+
+<div class="relative px-40 pb-24">
+    <div class="absolute flex h-full top-0 right-[22%] -z-10">
+        <div class="bg-yellow-300 h-full w-14"></div>
+        <div class="h-full w-14"></div>
+        <div class="bg-yellow-300 h-full w-14"></div>
+    </div>
+
+    
+    <div class="flex justify-between items-center pt-5 mb-16">
+        <h2 class="text-xl font-black">Mustang Garge</h2>
+
+        <nav class="gap-9 flex ">
+            <div class="relative px-3">
+                <a href="">CAR</a>
+                <div class="absolute size-2 bg-red-600 rounded-full top-0 right-0"></div>
+            </div>
+            <a href="">HISTORY</a>
+            <a href="">TECNOLOGY</a>
+            <a href="">PRODCUTION</a>
+        </nav>
+
+        <ButtonMustang text="CONTACT US"/>
+    </div >
+        
+    <div class="flex mb-16"> 
+        <div>
+
+            <h1 class="text-9xl font-black mb-12 max-w-xl">
+                Muscle Mustang
+            </h1>
+
+            <p class="mb-10 w-72">
+                Since 1903, Ford Motor company has
+                put the world on wheels.
+            </p>
+            <ButtonMustang text="DISCOVER"/>
+        </div>
+        <div class="relative flex items-center justify-end w-full">
+            <div class="absolute size-40 rounded-full shadow-lg z-10 bg-white left-[37%] -bottom-16"></div>
+            <Image class:list={"justify-center items-center "} src={Mustang02} alt="" width={620} height={450}/>
+            <Image class:list={"absolute top-10 blur-2xl shadow-2xl -z-10"} src={Mustang02} alt="" width={660} height={450}/>
+
+        </div>
+    </div>
+
+    <div class="flex justify-between ">
+        <div class="relative mt-5">
+            <div class="absolute text-gray-700 text-[390px] font-bold -z-10 opacity-20 -right-[20%] -top-[70%]">1967</div>
+            <Image class:list={"w-[890px]"} src={Mustang03} alt="" width={720}/>
+        </div>
+        <div class="flex justify-center items-center w-1/2">
+            <Image class:list={""} src={Mustang01} alt="" height={200} width={230}/>
+        </div>
+    </div>
+</div>
+
